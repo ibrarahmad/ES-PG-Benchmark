@@ -1,0 +1,3 @@
+DROP TABLE search_idx;
+CREATE TABLE search_idx(key_str varchar, val_str varchar, val_int int, val_date date);
+CREATE INDEX search_idx_key_str_idx ON search_idx                                                                                                                                                                               USING GIN ((setweight(to_tsvector('english'::regconfig, key_str), 'A') ||                                                                                                                                                                          setweight(to_tsvector('english'::regconfig, val_str), 'B'))); 

@@ -1,0 +1,19 @@
+{
+  "name": "benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "es.js",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.9.0",
+    "elasticsearch": "^16.7.1",
+    "faker": "^5.1.0",
+    "pg-promise": "^10.6.1",
+    "split2": "^3.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

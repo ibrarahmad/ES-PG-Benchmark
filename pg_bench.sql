@@ -1,0 +1,4 @@
+\timing
+SELECT 
+FROM search_idx                                                                                                                                                                                                                        WHERE (setweight(to_tsvector('english'::regconfig, key_str), 'A') ||                                                                                                                                                                          setweight(to_tsvector('english'::regconfig, val_str), 'B')) @@                                                                                                                                                                        websearch_to_tsquery('english'::regconfig, '"repellat sunt" -quis')                                                                                                                                                              LIMIT 10000;
+
